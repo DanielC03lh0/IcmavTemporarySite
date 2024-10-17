@@ -8,6 +8,20 @@ document.getElementById("burger-menu").addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
 });
 
+function toggleMenu() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+}
+
+// Fechar o menu ao clicar fora dele
+document.addEventListener("click", (event) => {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const burgerMenu = document.getElementById("burger-menu");
+
+    if (!mobileMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
+        mobileMenu.classList.add("hidden");
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const aboutUsSection = document.getElementById("aboutUs");
