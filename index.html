@@ -5,8 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICMAV</title>
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    
+    <!-- NAVBAR CONTENT CONTAINER -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            
+            <!-- Logo Section -->
+            <div class="logo flex items-center">
+                <!-- Logo Image -->
+                <img src="assets/images/logo.png" alt="logo" class="h-10 w-auto">
+            </div>
+
+            <!-- Main Menu for Larger Screens -->
+            <div class="links hidden md:flex space-x-6 font-semibold">
+                <!-- Each link includes an underline animation on hover -->
+                <a href="#" class="relative group hover:text-gray-300">Quem Somos
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="#" class="relative group hover:text-gray-300">Propósitos
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="#" class="relative group hover:text-gray-300">Ministérios
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="#" class="relative group hover:text-gray-300">Extensões
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="#" class="relative group hover:text-gray-300">Ofertas
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="#" class="relative group hover:text-gray-300">Horários
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+            </div>
+
+            <!-- Social Media Icons for Larger Screens -->
+            <div class="social hidden md:flex space-x-4">
+                <!-- Each icon includes an underline animation on hover -->
+                <a href="https://www.facebook.com/ICMAV" target="_blank" class="relative group hover:text-gray-300">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="https://www.instagram.com/icmav/" target="_blank" class="relative group hover:text-gray-300">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="relative group hover:text-gray-300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="relative group hover:text-gray-300">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                </a>
+            </div>
+
+            <!-- Burger Menu Button for Mobile Devices -->
+            <button id="burger-menu" class="block md:hidden text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Dropdown Menu for Mobile Devices -->
+        <div id="mobile-menu" class="hidden flex-col bg-gray-800 p-4 md:hidden space-y-6 items-center">
+            
+            <!-- Links in Centered List Format -->
+            <div class="links flex flex-col space-y-4 text-center">
+                <a href="#" class="hover:text-gray-300">Quem Somos</a>
+                <a href="#" class="hover:text-gray-300">Propósitos</a>
+                <a href="#" class="hover:text-gray-300">Ministérios</a>
+                <a href="#" class="hover:text-gray-300">Extensões</a>
+                <a href="#" class="hover:text-gray-300">Ofertas</a>
+                <a href="#" class="hover:text-gray-300">Horários</a>
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="border-gray-600 my-4 w-full">
+
+            <!-- Social Media Icons at Bottom of Mobile Menu -->
+            <div class="social flex justify-center space-x-6 text-lg">
+                <a href="https://www.facebook.com/ICMAV" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/icmav/" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
