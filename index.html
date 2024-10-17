@@ -5,103 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICMAV</title>
     <link rel="icon" type="image/png" href="/assets/images/logo.png">
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
 </head>
-<body>
+<body class="bg-black text-white">
+    
     <!-- NAVBAR CONTENT CONTAINER -->
-    <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50">
+    <nav class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
         <div class="container mx-auto flex items-center justify-between p-4">
-            
             <!-- Logo Section -->
             <div class="logo flex items-center">
-                <!-- Logo Image -->
                 <img src="assets/images/logo.png" alt="logo" class="h-10 w-auto">
             </div>
-
             <!-- Main Menu for Larger Screens -->
             <div class="links hidden md:flex space-x-6 font-semibold">
-                <!-- Each link includes an underline animation on hover -->
-                <a href="#aboutUs" class="relative group hover:text-gray-300">Quem Somos
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#aboutUs" class="relative group hover:text-gray-400">Quem Somos
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="#" class="relative group hover:text-gray-300">Propósitos
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#" class="relative group hover:text-gray-400">Propósitos
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="#" class="relative group hover:text-gray-300">Ministérios
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#" class="relative group hover:text-gray-400">Ministérios
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="#" class="relative group hover:text-gray-300">Extensões
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#" class="relative group hover:text-gray-400">Extensões
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="#" class="relative group hover:text-gray-300">Ofertas
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#" class="relative group hover:text-gray-400">Ofertas
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="#" class="relative group hover:text-gray-300">Horários
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                <a href="#" class="relative group hover:text-gray-400">Horários
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
             </div>
 
             <!-- Social Media Icons for Larger Screens -->
             <div class="social hidden md:flex space-x-4">
-                <!-- Each icon includes an underline animation on hover -->
-                <a href="https://www.facebook.com/ICMAV" target="_blank" class="relative group hover:text-gray-300">
+                <a href="https://www.facebook.com/ICMAV" target="_blank" class="relative group hover:text-gray-400">
                     <i class="fa-brands fa-facebook"></i>
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="https://www.instagram.com/icmav/" target="_blank" class="relative group hover:text-gray-300">
+                <a href="https://www.instagram.com/icmav/" target="_blank" class="relative group hover:text-gray-400">
                     <i class="fa-brands fa-instagram"></i>
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="relative group hover:text-gray-300">
+                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="relative group hover:text-gray-400">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
-                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="relative group hover:text-gray-300">
+                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="relative group hover:text-gray-400">
                     <i class="fa-brands fa-youtube"></i>
-                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
+                    <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
             </div>
-
+            
             <!-- Burger Menu Button for Mobile Devices -->
             <button id="burger-menu" class="block md:hidden text-white focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
-
         <!-- Dropdown Menu for Mobile Devices -->
-        <div id="mobile-menu" class="hidden flex-col bg-gray-800 p-4 md:hidden space-y-6 items-center">
-            
-            <!-- Links in Centered List Format -->
+        <div id="mobile-menu" class="hidden flex-col bg-black p-4 md:hidden space-y-6 items-center">
             <div class="links flex flex-col space-y-4 text-center">
-                <a href="aboutUs" class="hover:text-gray-300">Quem Somos</a>
-                <a href="#" class="hover:text-gray-300">Propósitos</a>
-                <a href="#" class="hover:text-gray-300">Ministérios</a>
-                <a href="#" class="hover:text-gray-300">Extensões</a>
-                <a href="#" class="hover:text-gray-300">Ofertas</a>
-                <a href="#" class="hover:text-gray-300">Horários</a>
+                <a href="#aboutUs" class="hover:text-gray-400">Quem Somos</a>
+                <a href="#" class="hover:text-gray-400">Propósitos</a>
+                <a href="#" class="hover:text-gray-400">Ministérios</a>
+                <a href="#" class="hover:text-gray-400">Extensões</a>
+                <a href="#" class="hover:text-gray-400">Ofertas</a>
+                <a href="#" class="hover:text-gray-400">Horários</a>
             </div>
-
-            <!-- Divider Line -->
-            <hr class="border-gray-600 my-4 w-full">
-
-            <!-- Social Media Icons at Bottom of Mobile Menu -->
+            <hr class="border-gray-700 my-4 w-full">
             <div class="social flex justify-center space-x-6 text-lg">
-                <a href="https://www.facebook.com/ICMAV" target="_blank" class="hover:text-gray-300">
+                <a href="https://www.facebook.com/ICMAV" target="_blank" class="hover:text-gray-400">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/icmav/" target="_blank" class="hover:text-gray-300">
+                <a href="https://www.instagram.com/icmav/" target="_blank" class="hover:text-gray-400">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="hover:text-gray-300">
+                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="hover:text-gray-400">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="hover:text-gray-300">
+                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="hover:text-gray-400">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </div>
@@ -111,9 +97,7 @@
     <!-- HEADER CONTENT CONTAINER -->
     <header class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/images/header.jpg');">
         <!-- Overlay Filter to Dim Background -->
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-
-        <!-- Foreground Content (Logo) Centered and Larger -->
+        <div class="absolute inset-0 bg-black opacity-75"></div>
         <div class="relative z-10 flex justify-center items-center">
             <div class="logo">
                 <img src="assets/images/Logo_branco.png" alt="Logo" class="w-72 h-auto md:w-96 lg:w-1/2 mx-auto">
@@ -122,40 +106,45 @@
     </header>
 
     <!-- MAIN CONTENT CONTAINER -->
-    <main class="bg-gray-900 py-24">
-
-        <!-- ABOUT US CONTAINER -->
+    <main class="bg-black pt-20">
         <div id="aboutUs" class="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 px-4 opacity-0 transition-opacity duration-1000">
-    
-            <!-- Text Content Section with Slide-In Animation from Left -->
-            <div class="about-text md:w-1/2 space-y-4 text-gray-100 text-center md:text-left animate-slideInLeft">
-                
-                <!-- Title with Enlarged Divider Line Below -->
+            <div class="about-text md:w-1/2 space-y-4 text-gray-300 text-center md:text-left animate-slideInLeft">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white relative">
-                    Who We Are?
-                    
-                    <!-- Divider line that scales with screen size; centered on small screens, left-aligned on larger screens -->
+                    ICMAV
                     <span class="block h-1 w-24 bg-gray-500 mt-2 mx-auto md:mx-0"></span>
                 </h1>
-                
-                <!-- Main paragraph text with responsive font sizing -->
                 <p class="text-base md:text-lg lg:text-xl">
                     Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora nesciunt quae molestiae nemo? Omnis, aut qui? Doloremque minus explicabo, consectetur vero nihil deserunt non iure veritatis corporis fuga tempora!
                 </p>
-                
-                <!-- Base scripture text in italic style with responsive font sizing -->
-                <p class="text-sm md:text-base lg:text-lg italic font-semibold text-gray-300">Base scripture</p>
+                <p class="text-sm md:text-base lg:text-lg italic font-semibold text-gray-400">Base scripture</p>
             </div>
-            
-            <!-- Image Section with Slide-In Animation from Bottom -->
             <div class="about-image md:w-1/2 flex justify-center md:justify-end animate-slideInBottom">
-                <!-- Image with rounded corners, shadow, border, and a hover effect to add shadow and scale -->
-                <img src="assets/images/henrique.jpg" alt="henrique" class="rounded-lg shadow-lg hover:shadow-2xl hover:border-4 hover:border-indigo-500 transition-all duration-300 transform hover:scale-105 w-80 md:w-96 lg:w-[32rem]">
+                <img src="assets/images/henrique.jpg" alt="henrique" class="rounded-lg shadow-lg hover:shadow-2xl hover:border-4 hover:border-gray-700 transition-all duration-300 transform hover:scale-105 w-80 md:w-96 lg:w-[32rem]">
             </div>
         </div>
-       
+
+        <div class="w-full h-96 mt-20 overflow-hidden bg-black">
+            <img src="assets/images/banner.jpg" alt="Banner" class="w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-80"></div>
+        </div>
+        
+        <div id="aboutUs" class="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 px-4 opacity-0 transition-opacity duration-1000">
+            <div class="about-text md:w-1/2 space-y-4 text-gray-300 text-center md:text-left animate-slideInLeft">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white relative">
+                    ICMAV
+                    <span class="block h-1 w-24 bg-gray-500 mt-2 mx-auto md:mx-0"></span>
+                </h1>
+                <p class="text-base md:text-lg lg:text-xl">
+                    Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora nesciunt quae molestiae nemo? Omnis, aut qui? Doloremque minus explicabo, consectetur vero nihil deserunt non iure veritatis corporis fuga tempora!
+                </p>
+                <p class="text-sm md:text-base lg:text-lg italic font-semibold text-gray-400">Base scripture</p>
+            </div>
+            <div class="about-image md:w-1/2 flex justify-center md:justify-end animate-slideInBottom">
+                <img src="assets/images/henrique.jpg" alt="henrique" class="rounded-lg shadow-lg hover:shadow-2xl hover:border-4 hover:border-gray-700 transition-all duration-300 transform hover:scale-105 w-80 md:w-96 lg:w-[32rem]">
+            </div>
+        </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
