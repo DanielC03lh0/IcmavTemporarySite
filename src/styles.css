@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Keyframes for expanding the divider line */
 @keyframes expand {
     from { width: 0; }
