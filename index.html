@@ -27,7 +27,7 @@
             <!-- Main Menu for Larger Screens -->
             <div class="links hidden md:flex space-x-6 font-semibold">
                 <!-- Each link includes an underline animation on hover -->
-                <a href="#" class="relative group hover:text-gray-300">Quem Somos
+                <a href="#aboutUs" class="relative group hover:text-gray-300">Quem Somos
                     <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full group-hover:left-0 transform scale-x-0 group-hover:scale-x-100 origin-center"></span>
                 </a>
                 <a href="#" class="relative group hover:text-gray-300">Propósitos
@@ -79,7 +79,7 @@
             
             <!-- Links in Centered List Format -->
             <div class="links flex flex-col space-y-4 text-center">
-                <a href="#" class="hover:text-gray-300">Quem Somos</a>
+                <a href="aboutUs" class="hover:text-gray-300">Quem Somos</a>
                 <a href="#" class="hover:text-gray-300">Propósitos</a>
                 <a href="#" class="hover:text-gray-300">Ministérios</a>
                 <a href="#" class="hover:text-gray-300">Extensões</a>
@@ -121,10 +121,41 @@
         </div>
     </header>
 
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="bg-gray-900 py-24">
 
-
-
-
+        <!-- ABOUT US CONTAINER -->
+        <div id="aboutUs" class="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8 px-4 opacity-0 transition-opacity duration-1000">
+    
+            <!-- Text Content Section with Slide-In Animation from Left -->
+            <div class="about-text md:w-1/2 space-y-4 text-gray-100 text-center md:text-left animate-slideInLeft">
+                
+                <!-- Title with Enlarged Divider Line Below -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white relative">
+                    Who We Are?
+                    
+                    <!-- Divider line that scales with screen size; centered on small screens, left-aligned on larger screens -->
+                    <span class="block h-1 w-24 bg-gray-500 mt-2 mx-auto md:mx-0"></span>
+                </h1>
+                
+                <!-- Main paragraph text with responsive font sizing -->
+                <p class="text-base md:text-lg lg:text-xl">
+                    Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora nesciunt quae molestiae nemo? Omnis, aut qui? Doloremque minus explicabo, consectetur vero nihil deserunt non iure veritatis corporis fuga tempora!
+                </p>
+                
+                <!-- Base scripture text in italic style with responsive font sizing -->
+                <p class="text-sm md:text-base lg:text-lg italic font-semibold text-gray-300">Base scripture</p>
+            </div>
+            
+            <!-- Image Section with Slide-In Animation from Bottom -->
+            <div class="about-image md:w-1/2 flex justify-center md:justify-end animate-slideInBottom">
+                <!-- Image with rounded corners, shadow, border, and a hover effect to add shadow and scale -->
+                <img src="assets/images/henrique.jpg" alt="henrique" class="rounded-lg shadow-lg hover:shadow-2xl hover:border-4 hover:border-indigo-500 transition-all duration-300 transform hover:scale-105 w-80 md:w-96 lg:w-[32rem]">
+            </div>
+        </div>
+       
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>

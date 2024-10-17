@@ -1,0 +1,48 @@
+/* Keyframes for expanding the divider line */
+@keyframes expand {
+    from { width: 0; }
+    to { width: 6rem; } /* Extended to make the line longer */
+}
+
+/* Applying expand animation to divider */
+.animate-expand {
+    animation: expand 0.5s ease-out forwards;
+}
+
+/* Keyframes for sliding in from left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for sliding in from bottom */
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying the animations with increased duration */
+.animate-slideInLeft {
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.animate-slideInBottom {
+    animation: slideInBottom 1.5s ease-out forwards;
+}
+
+/* Fade-in class */
+.fade-in {
+    opacity: 1 !important;
+}
