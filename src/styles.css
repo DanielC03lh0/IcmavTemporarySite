@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Keyframes for expanding the divider line */
 @keyframes expand {
     from { width: 0; }
