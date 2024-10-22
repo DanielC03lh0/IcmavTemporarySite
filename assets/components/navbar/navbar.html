@@ -1,0 +1,98 @@
+<!-- NAVBAR CONTENT CONTAINER -->
+<nav class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
+    <div class="container mx-auto flex items-center justify-between p-4">
+        
+        <!-- Placeholder para a logo com tamanho fixo para manter o balanceamento -->
+        <div class="flex justify-start flex-grow-0 w-1/4">
+            <div class="logo flex items-center">
+                <img src="assets/images/logo.png" alt="logo" class="h-10 w-auto">
+            </div>
+        </div>
+
+        <!-- Main Menu for Larger Screens, centrado graças ao espaço igual nos placeholders -->
+        <div class="links hidden lg:flex justify-center space-x-6 font-semibold w-2/4"> 
+            <a href="/" class="relative group hover:text-gray-400">Home
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="#" class="relative group hover:text-gray-400">Propósitos
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="#" class="relative group hover:text-gray-400">Ministérios
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="#" class="relative group hover:text-gray-400">Extensões
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="#" class="relative group hover:text-gray-400">Contribuir
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="#contacts" class="relative group hover:text-gray-400">Contactos
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+        </div>
+
+        <!-- Placeholder para os ícones das redes sociais -->
+        <div class="social hidden lg:flex justify-end space-x-4 w-1/4">
+            <a href="https://www.facebook.com/ICMAV" target="_blank" class="relative group hover:text-gray-400">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="https://www.instagram.com/icmav/" target="_blank" class="relative group hover:text-gray-400">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="relative group hover:text-gray-400">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+            <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="relative group hover:text-gray-400">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+            </a>
+        </div>
+        
+        <!-- Burger Menu Button for Mobile Devices -->
+        <button id="burger-menu" class="block lg:hidden text-white focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+    </div>
+    <!-- Burger Menu para dispositivos móveis -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black p-4 lg:hidden flex flex-col justify-between items-center hidden z-50">
+
+        <!-- Botão de fechar no topo direito -->
+        <button onclick="toggleMenu()" class="self-end text-white text-2xl focus:outline-none mb-8">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Links centralizados no menu -->
+        <div class="links flex flex-col space-y-4 text-center">
+            <a href="/" class="hover:text-gray-300" onclick="toggleMenu()">Home</a>
+            <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Propósitos</a>
+            <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Ministérios</a>
+            <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Extensões</a>
+            <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Contribuir</a>
+            <a href="#contacts" class="hover:text-gray-300" onclick="toggleMenu()">Contactos</a>
+        </div>
+
+        <!-- Ícones de redes sociais no rodapé do menu -->
+        <div class="w-full mt-8">
+            <hr class="border-gray-600 my-4 w-full">
+            <div class="social flex justify-center space-x-6 text-lg">
+                <a href="https://www.facebook.com/ICMAV" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/icmav/" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/EdGaqNUARdYB7HokXeleHR" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.youtube.com/c/icmavumaigrejacompropositos" target="_blank" class="hover:text-gray-300">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script src="navbar.js"></script>
