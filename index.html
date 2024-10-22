@@ -15,13 +15,17 @@
     <!-- NAVBAR CONTENT CONTAINER -->
     <nav class="fixed top-0 left-0 w-full bg-black text-white shadow-lg z-50">
         <div class="container mx-auto flex items-center justify-between p-4">
-            <!-- Logo Section -->
-            <div class="logo flex items-center">
-                <img src="assets/images/logo.png" alt="logo" class="h-10 w-auto">
+            
+            <!-- Placeholder para a logo com tamanho fixo para manter o balanceamento -->
+            <div class="flex justify-start flex-grow-0 w-1/4">
+                <div class="logo flex items-center">
+                    <img src="assets/images/logo.png" alt="logo" class="h-10 w-auto">
+                </div>
             </div>
-            <!-- Main Menu for Larger Screens -->
-            <div class="links hidden md:flex space-x-6 font-semibold">
-                <a href="#aboutUs" class="relative group hover:text-gray-400">Quem Somos
+
+            <!-- Main Menu for Larger Screens, centrado graças ao espaço igual nos placeholders -->
+            <div class="links hidden lg:flex justify-center space-x-6 font-semibold w-2/4"> 
+                <a href="/" class="relative group hover:text-gray-400">Home
                     <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                 </a>
                 <a href="#" class="relative group hover:text-gray-400">Propósitos
@@ -41,8 +45,8 @@
                 </a>
             </div>
 
-            <!-- Social Media Icons for Larger Screens -->
-            <div class="social hidden md:flex space-x-4">
+            <!-- Placeholder para os ícones das redes sociais -->
+            <div class="social hidden lg:flex justify-end space-x-4 w-1/4">
                 <a href="https://www.facebook.com/ICMAV" target="_blank" class="relative group hover:text-gray-400">
                     <i class="fa-brands fa-facebook"></i>
                     <span class="absolute left-1/2 -bottom-1 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
@@ -62,13 +66,13 @@
             </div>
             
             <!-- Burger Menu Button for Mobile Devices -->
-            <button id="burger-menu" class="block md:hidden text-white focus:outline-none">
+            <button id="burger-menu" class="block lg:hidden text-white focus:outline-none">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
         <!-- Burger Menu para dispositivos móveis -->
-        <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 p-4 md:hidden flex flex-col justify-between items-center hidden z-50">
-            
+        <div id="mobile-menu" class="fixed inset-0 bg-black p-4 lg:hidden flex flex-col justify-between items-center hidden z-50">
+
             <!-- Botão de fechar no topo direito -->
             <button onclick="toggleMenu()" class="self-end text-white text-2xl focus:outline-none mb-8">
                 <i class="fa-solid fa-xmark"></i>
@@ -76,7 +80,7 @@
 
             <!-- Links centralizados no menu -->
             <div class="links flex flex-col space-y-4 text-center">
-                <a href="#aboutUs" class="hover:text-gray-300" onclick="toggleMenu()">Quem Somos</a>
+                <a href="/" class="hover:text-gray-300" onclick="toggleMenu()">Home</a>
                 <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Propósitos</a>
                 <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Ministérios</a>
                 <a href="#" class="hover:text-gray-300" onclick="toggleMenu()">Extensões</a>
@@ -152,7 +156,6 @@
                 <p class="text-2xl italic text-gray-300">João 14:6</p>
             </div>
         </div>
-
 
         <!-- EVENTS CONTAINER -->
         <div id="events" class="container mx-auto px-4 py-12 lg:px-8">
@@ -404,11 +407,6 @@
         </div>
     </footer>
     
-    
-    
-    
-    
-
     <script src="script.js"></script>
 </body>
 </html>
